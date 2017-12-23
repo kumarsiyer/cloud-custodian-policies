@@ -12,5 +12,5 @@ policies:
        op: in
    actions:
      - type: tag
-       key: keyanme
+       key: keyname
        value: value
