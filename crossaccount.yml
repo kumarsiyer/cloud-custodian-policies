@@ -1,0 +1,12 @@
+vars:
+  accounts_url: &accounts_url https://www.example.com
+
+policies:
+
+ - name: cross-account
+   resource: lambda
+   filters:
+     - type: cross-account
+       whitelist_from:
+          expr: "accounts.*accountNumber"
+          url: *accounts_url
