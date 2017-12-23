@@ -1,0 +1,16 @@
+policies:
+
+ - name: s3-tagging
+   resource: s3
+   filters:
+     - type: value
+       key: name
+       value:
+         - Name1
+         - Name2
+         - Name3
+       op: in
+   actions:
+     - type: tag
+       key: keyanme
+       value: value
